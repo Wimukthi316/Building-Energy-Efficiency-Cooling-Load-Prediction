@@ -1,6 +1,5 @@
 # ============================================================================
-# Business Analytics Assignment - Energy Efficiency Data Analysis
-# Dataset: EED.csv (Energy Efficiency Data)
+# Dataset: Energy Efficiency Data.csv
 # ============================================================================
 
 # Set working directory
@@ -17,7 +16,7 @@ library(car)        # For statistical tests
 # ============================================================================
 
 # Load the Energy Efficiency Data
-eed_data <- read.csv("EED.csv", header = TRUE)
+eed_data <- read.csv("Energy Efficiency Data.csv", header = TRUE)
 
 # View first few rows
 head(eed_data)
@@ -92,7 +91,7 @@ par(mfrow = c(1, 1))
 # ============================================================================
 # Hypothesis Testing - Orientation vs Cooling Load
 # ============================================================================
-cat("\n TASK 4: ANOVA - Effect of Orientation on Cooling Load\n\n")
+cat("\n ANOVA - Effect of Orientation on Cooling Load\n\n")
 
 # First, check if Orientation is categorical
 eed_data$Orientation <- as.factor(eed_data$Orientation)
@@ -127,13 +126,6 @@ if(summary(anova_result)[[1]][["Pr(>F)"]][1] < 0.05) {
   cat("\nTukey HSD Post-hoc Test:\n")
   print(TukeyHSD(anova_result))
 }
-
-# Justification Note for Report:
-cat("\n*** STATISTICAL NOTE FOR INTERPRETATION ***\n")
-cat("Although normality tests indicate deviation from normal distribution,\n")
-cat("ANOVA is robust to normality violations with large sample sizes (n=768).\n")
-cat("Levene's test confirms homogeneity of variance (p=0.719 > 0.05).\n")
-cat("To confirm findings, we also perform a non-parametric alternative:\n\n")
 
 # Non-parametric alternative: Kruskal-Wallis Test
 cat("Kruskal-Wallis Test (Non-Parametric Alternative):\n")
@@ -197,7 +189,7 @@ for(predictor in predictors) {
     cat("\nUsing Pearson Correlation (data is normally distributed):\n")
     cor_test <- cor.test(eed_data$Cooling_Load, eed_data[[predictor]], method = "pearson")
   } else {
-    cat("\nUsing Spearman Correlation (data is not normally distributed):\n")
+    cat("\nUsing Spearrman Correlation (data is not normally distributed):\n")
     cor_test <- cor.test(eed_data$Cooling_Load, eed_data[[predictor]], method = "spearman")
   }
   print(cor_test)
