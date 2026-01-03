@@ -134,7 +134,7 @@ source("energy_efficiency_analysis.R")
 ```
 Building-Energy-Efficiency-Cooling-Load-Prediction/
 │
-├── 📄 Energy Efficiency Dataset.csv                          # Energy Efficiency Dataset
+├── 📄 Energy Efficiency Dataset.csv    # Energy Efficiency Dataset
 ├── 📜 energy_efficiency_analysis.R     # Main analysis script
 ├── 📊 analysis_results.pdf             # Comprehensive report
 ├── 📋 README.md                        # Project documentation
