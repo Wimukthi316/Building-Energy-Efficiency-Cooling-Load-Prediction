@@ -13,7 +13,7 @@ library(nortest)    # For normality tests
 library(car)        # For statistical tests
 
 # ============================================================================
-# TASK 2: Load and Explore the Dataset
+# Load and Explore the Dataset
 # ============================================================================
 
 # Load the Energy Efficiency Data
@@ -32,8 +32,7 @@ summary(eed_data)
 sum(is.na(eed_data))
 
 # ============================================================================
-# TASK 3: Central Tendency Analysis with Bell Curves
-# Variables: Cooling_Load, Surface_Area, Wall_Area, Roof_Area
+# Central Tendency Analysis with Bell Curves
 # ============================================================================
 
 # Function to create bell curve with central tendency measures
@@ -91,9 +90,7 @@ create_bell_curve(eed_data, "Roof_Area")
 par(mfrow = c(1, 1))
 
 # ============================================================================
-# TASK 4: Hypothesis Testing - Orientation vs Cooling Load
-# H0: Building orientation does NOT significantly affect Cooling Load
-# H1: Building orientation DOES significantly affect Cooling Load
+# Hypothesis Testing - Orientation vs Cooling Load
 # ============================================================================
 cat("\n TASK 4: ANOVA - Effect of Orientation on Cooling Load\n\n")
 
@@ -163,8 +160,7 @@ boxplot(Cooling_Load ~ Orientation,
         col = rainbow(length(unique(eed_data$Orientation))))
 
 # ============================================================================
-# TASK 5: Correlation and Regression Analysis
-# Relationships between Cooling_Load and Surface_Area, Wall_Area, Roof_Area
+# Correlation and Regression Analysis
 # ============================================================================
 
 # Variables to test
