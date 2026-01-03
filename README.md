@@ -127,9 +127,6 @@ setwd("path/to/Building-Energy-Efficiency-Cooling-Load-Prediction")
 source("energy_efficiency_analysis.R")
 ```
 
-### Expected Runtime
-⏱️ Approximately 2-3 minutes on standard hardware
-
 ---
 
 ## 📂 Project Structure
@@ -137,11 +134,10 @@ source("energy_efficiency_analysis.R")
 ```
 Building-Energy-Efficiency-Cooling-Load-Prediction/
 │
-├── 📄 EED.csv                          # Energy Efficiency Dataset
+├── 📄 Energy Efficiency Dataset.csv                          # Energy Efficiency Dataset
 ├── 📜 energy_efficiency_analysis.R     # Main analysis script
 ├── 📊 analysis_results.pdf             # Comprehensive report
 ├── 📋 README.md                        # Project documentation
-└── 📝 .Rprofile                        # R environment configuration
 ```
 
 ---
@@ -172,16 +168,11 @@ Building-Energy-Efficiency-Cooling-Load-Prediction/
 
 ## 📜 Academic Context
 
-**Course:** CSE5014 - Business Analytics  
 **Focus:** Statistical Analysis & Predictive Modeling  
 **Domain:** Energy Efficiency & Sustainable Building Design
 
 ---
 
 <div align="center">
-
-### 🌟 Built with Precision • Analyzed with Rigor • Documented with Care
-
-**Made with ❤️ for Data Science**
 
 </div>
