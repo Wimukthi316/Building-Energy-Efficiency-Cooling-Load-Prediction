@@ -1,6 +1,5 @@
 # ============================================================================
 # Business Analytics Assignment - Energy Efficiency Data Analysis
-# Module: CSE5014 - Business Analytics
 # Dataset: EED.csv (Energy Efficiency Data)
 # ============================================================================
 
